@@ -1,0 +1,86 @@
+/* Settings.css */
+
+.settings {
+    padding: 20px;
+    max-width: 600px; /* Set max-width for better alignment */
+    margin: auto; /* Center-align settings container */
+}
+
+.setting-group {
+    margin-bottom: 20px;
+    text-align: center; /* Center-align text within settings group */
+}
+
+.setting-group label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust gap between items */
+    justify-content: center; /* Center-align checkboxes */
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.checkbox-item input {
+    margin-right: 8px;
+}
+
+input[type="number"] {
+    width: 100%;
+    max-width: 400px; /* Prevent input fields from stretching too wide */
+    padding: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .setting-group label {
+        font-size: 14px;
+    }
+
+    input[type="number"] {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .settings {
+        padding: 10px;
+    }
+
+    button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .setting-group label {
+        font-size: 12px;
+    }
+
+    input[type="number"] {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,172 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.settings-section, .quiz-section, .summary {
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.settings-group {
+  margin-bottom: 20px;
+}
+
+.checkbox-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.checkbox-container label {
+  margin: 5px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.submit-button {
+  font-size: 14px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.stop-button {
+  margin-top: 20px;
+}
+
+.question {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.answer-input {
+  font-size: 20px;
+  padding: 10px;
+  width: 100%;
+  max-width: 150px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.countdown {
+  text-align: center;
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.summary {
+  text-align: center;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.summary ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.summary li {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.feedback {
+  font-size: 18px;
+  color: #ff6347;
+  margin: 20px 0;
+}
+
+.correct-animation {
+  animation: correct-animation 0.5s ease;
+}
+
+.incorrect-animation {
+  animation: incorrect-animation 0.5s ease;
+}
+
+@keyframes correct-animation {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+@keyframes incorrect-animation {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(-10deg); }
+  50% { transform: rotate(10deg); }
+  75% { transform: rotate(-10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@media (max-width: 768px) {
+  button {
+      padding: 8px 16px;
+      font-size: 14px;
+  }
+
+  .question {
+      font-size: 16px;
+  }
+
+  .answer-input {
+      font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+      padding: 10px;
+  }
+
+  button {
+      padding: 6px 12px;
+      font-size: 12px;
+  }
+
+  .question {
+      font-size: 14px;
+  }
+
+  .answer-input {
+      font-size: 14px;
+  }
+}
+
+.button-group {
+  margin-top: 20px;
+}
+
+.button-group button {
+  margin: 0 10px;
+}
